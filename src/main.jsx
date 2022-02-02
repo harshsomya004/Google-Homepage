@@ -93,8 +93,24 @@ function main() {
           padding: 2%;
         `}
       >
-        <button onClick={function onc() {}}>Google Search</button>
-        <button onClick={function onc() {}}>I'm Feeling Lucky</button>
+        <button
+          onClick={() => {
+            window.location = `https://www.google.com/search?q=${
+              document.getElementById("input").value
+            }`;
+          }}
+        >
+          Google Search
+        </button>
+        <button
+          onClick={() => {
+            window.location = `https://www.google.com/search?q=${
+              document.getElementById("input").value
+            }`;
+          }}
+        >
+          I'm Feeling Lucky
+        </button>
       </div>
       <footer>
         <ul className="footer-left">
